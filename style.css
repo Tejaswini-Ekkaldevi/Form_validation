@@ -1,0 +1,62 @@
+
+body{
+    margin:5px auto;
+    min-width: 250px;
+    max-width: 50%;
+    background-color:lightgrey;
+    text-align: center;
+    display: block;
+
+}
+h2{
+    text-align: center;
+}
+.form{
+    text-align: center;
+    background-color: rgba(50, 104, 255, 0.952);
+    color: white;
+    text-align: center;
+    font-size:large;
+    padding: 100px 80px;
+}
+input{
+    margin: 0;
+    width: 50%;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 0;
+    border: none;
+}
+#sub{
+    padding:6px 20px;
+    width:20%;
+    font-size: 15px;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    border-radius: 0;
+    
+}
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+  
+input:focus:invalid {
+    box-shadow: none;
+}
+
+#email{
+    color: red;
+}
+#zipcode{
+    color: red;
+}
+#count{
+    color: red;
+}
+#pwd{
+    color: red;
+}
+#pwd1{
+    color: red;
+}

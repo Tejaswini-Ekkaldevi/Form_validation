@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "container">
+            <form class="form" onsubmit="return validation()">
+                <h2>Form</h2>
+                <div class ="formelemet">            
+                    <label for="mail">Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type = "mail" id = "mail" placeholder="Enter your email address" ></br>
+                    
+                    <span id="email"></span></br>
+                </div>
+    
+                <div class ="formelemet"> 
+                    <label for="country">Country :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                    
+                    <select id="country">
+                        <option disabled>--Country--</option>
+                        <option>India</option>
+                        <option>Canada</option>
+                        <option>Japan</option>
+                        <option>Germany</option>
+                        <option>United States</option>
+                    </select></br>
+                    <span id="count"></span></br>
+                </div>
+                
+                <div class ="formelemet"> 
+                    <label for="code">Zip Code :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type = "number" id = "code" placeholder="Enter Zip Code">
+                    </br><span id="zipcode"></span></br>
+                </div>
+
+                <div class ="formelemet"> 
+                    <label for="pass">Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                    <input type="password" id = "pass" placeholder="Enter password">
+                    </br><span id="pwd"></span></br>
+                </div> 
+                
+                <div class ="formelemet"> 
+                    <label for = "pass1">Confirm Password :</label>
+                    <input type="password" id = "pass1" placeholder="Reenter your password ">
+                </br><span id="pwd1"></span></br>
+                </div>
+                    <input type="submit" id = "sub" value="Submit">
+
+             </form>
+        </div>
+        <script type="text/javascript" src = "form.js"></script>
+    </body>
+</html>
